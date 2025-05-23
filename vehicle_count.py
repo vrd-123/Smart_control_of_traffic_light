@@ -3,14 +3,12 @@ from ultralytics import YOLO
 import numpy as np
 from collections import defaultdict, deque
 
-# Load the YOLOv8 model
+#Use yolov8m.pt or yolov8x.pt for increased accuracy
 model = YOLO('yolov8s.pt')
 
-# Load COCO class names
 with open('coco.names', 'r') as f:
     coco_names = [line.strip() for line in f.readlines()]
 
-# Video source
 video_path = 'video.mp4'
 cap = cv2.VideoCapture(video_path)
 
@@ -25,10 +23,9 @@ counter_up = 0
 counter_down = 0
 counted_ids = set()
 
-# Track object center history
 track_history = defaultdict(lambda: deque(maxlen=2))
 
-# Vehicle class IDs in COCO
+# Vehicle class IDs in COCO set
 vehicle_class_ids = [2, 3, 5, 7]
 
 while True:
