@@ -13,7 +13,8 @@ Using computer vision techniques, the system detects and classifies vehicles at 
 ---
 
 # Flowchart
-![image](https://github.com/user-attachments/assets/8d8a8de2-9964-44f5-b53e-c0ec5404bfc4)
+![image](https://github.com/user-attachments/assets/5fda893b-61cf-49b3-9b99-54b5ab9907be)
+
 
 ---
 
